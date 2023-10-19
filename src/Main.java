@@ -17,10 +17,16 @@ public class Main {
             cardList.add(new Card(number,"Hearts"));
             cardList.add(new Card(number,"Spades"));
         }
-        System.out.println(cardList.size());
-        System.out.println(cardList.contains(new Card(2,"Clubs")));
 
-        System.out.println("Tjenatjena hejhej");
+
+        Card card1= new Card(1,"Hearts");
+
+        System.out.println(cardList.get(2));
+
+        if(cardList.get(2).equals(card1))
+        {
+            System.out.println("They are the same");
+        }
 
 
 
