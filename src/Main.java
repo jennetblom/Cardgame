@@ -9,7 +9,7 @@ public class Main {
 
 
         List<Card> cardList=new ArrayList<>();
-        
+
 
         for(int number=1; number<=13;number++){
             cardList.add(new Card(number,"Clubs"));
@@ -20,10 +20,7 @@ public class Main {
         System.out.println(cardList.size());
         System.out.println(cardList.contains(new Card(2,"Clubs")));
 
-
-
-
-
+        System.out.println("Tjenatjena hejhej");
 
 
 
