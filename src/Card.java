@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Card {
     private int number;
     private String type;
@@ -21,6 +23,16 @@ public class Card {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, type);
+    }
+
+    @Override
+    public String toString() {
+        return "Number: "+ number + " Type: "+getType();
     }
 
     @Override
