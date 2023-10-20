@@ -9,7 +9,14 @@ public class Main {
     public static void main(String[] args) {
 
         CardDeck cardDeck=new CardDeck();
-        System.out.println(cardDeck.getCard(1));
+
+
+        System.out.println();
+        Card card1=new Card(2,"Hearts");
+        Card card2 = cardDeck.getCard(7);
+        System.out.println(card1);
+        System.out.println(card2);
+        System.out.println(card1.compareTo(card2));
 
       //  cardDeck.sortCardDeck();
 
