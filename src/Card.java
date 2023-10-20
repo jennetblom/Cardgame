@@ -37,18 +37,23 @@ public class Card {
 
     @Override
     public boolean equals(Object obj) {
-//        Person person = (Person)obj;
-//
-//        String personName= person.getName();
-//        boolean isSame= personName.equals(this.name);
-//        return isSame;
 
         Card card = (Card)obj;
         String cardType = card.getType();
         int cardNumber = card.getNumber();
 
-        boolean isSame = cardType.equals(this.type)&& cardNumber==(this.number);
+        if(cardType.equals(this.type)){
+            System.out.print("Same type");
+            System.out.println();
+        }
+        if(cardNumber==(this.number)){
+            System.out.println("Same number");
+           // System.out.print();
+        }
+
+        boolean isSame = cardType.equals(this.type)|| cardNumber==(this.number);
         return isSame;
+
     }
 }
 
