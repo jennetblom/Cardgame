@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Card {
+public class Card implements Comparable<Card>{
     private int number;
     private String type;
 
@@ -45,6 +45,20 @@ public class Card {
 
         boolean isSame = cardType.equals(this.type)|| cardNumber==(this.number);
         return isSame;
+
+    }
+
+    @Override
+    public int compareTo(Card other) {
+        if(this.number>other.number){
+            return 1;
+        }
+        else if(this.number<other.number){
+            return -1;
+        }
+        else{
+            return 0;
+        }
 
     }
 }
