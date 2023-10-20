@@ -12,18 +12,6 @@ public class Main {
         Card card1 = new Card(10, "Hearts");
         checkIfEqual(cardList, card1);
 
-
-        //Card card1 = new Card(1, "Hearts");
-
-
-//        for (int indexOfCards = 0; indexOfCards < cardList.size(); indexOfCards++) {
-//            System.out.print(cardList.get(indexOfCards));
-//            if (cardList.get(indexOfCards).equals(card1)) {
-//                System.out.println(" They are the same type");
-//            } else {
-//                System.out.println(" They are not the same");
-//            }
-//        }
     }
 
     private static List cardList() {
@@ -44,11 +32,11 @@ public class Main {
 
         for (int indexOfCards = 0; indexOfCards < cardList.size(); indexOfCards++) {
             System.out.println(cardList.get(indexOfCards));
-            if (cardList.get(indexOfCards).equals(card1)) {
-                //     System.out.print(" They are the same type");
-                // System.out.println();
-            } else {
-                //        System.out.print(" They are not the same");
+            if (cardList.get(indexOfCards).getType().equals(card1.getType())){
+                 System.out.println("Same type");
+            }
+            if(cardList.get(indexOfCards).getNumber()==card1.getNumber()){
+                System.out.println("Same number");
             }
         }
     }
