@@ -42,14 +42,6 @@ public class Card {
         String cardType = card.getType();
         int cardNumber = card.getNumber();
 
-//        if(cardType.equals(this.type)){
-//            System.out.print("Same type");
-//            System.out.println();
-//        }
-//        if(cardNumber==(this.number)){
-//            System.out.println("Same number");
-//           // System.out.print();
-//        }
 
         boolean isSame = cardType.equals(this.type)|| cardNumber==(this.number);
         return isSame;

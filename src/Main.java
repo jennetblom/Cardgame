@@ -7,25 +7,32 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        CardDeck cardDeck=new CardDeck();
 
-        List<Card> cardList = cardList();
-        Card card1 = new Card(10, "Hearts");
-        checkIfEqual(cardList, card1);
+        cardDeck.getCardDeck().get(1).getNumber();
+
+
+
+        //System.out.println(cardDeck.getCardDeck());
+
+//        List
+//        Card card1 = new Card(10, "Hearts");
+//        checkIfEqual(cardList, card1);
 
     }
-
-    private static List cardList() {
-
-
-        List<Card> cardList = new ArrayList<>();
-        for (int number = 1; number <= 13; number++) {
-            cardList.add(new Card(number, "Clubs"));
-            cardList.add(new Card(number, "Diamonds"));
-            cardList.add(new Card(number, "Hearts"));
-            cardList.add(new Card(number, "Spades"));
-        }
-        return cardList;
-    }
+//
+//    private static List cardList() {
+//
+////
+////        List<Card> cardList = new ArrayList<>();
+////        for (int number = 1; number <= 13; number++) {
+////            cardList.add(new Card(number, "Clubs"));
+////            cardList.add(new Card(number, "Diamonds"));
+////            cardList.add(new Card(number, "Hearts"));
+////            cardList.add(new Card(number, "Spades"));
+////        }
+////        return cardList;
+//    }
 
     private static void checkIfEqual(List<Card> cardList, Card card1) {
 
